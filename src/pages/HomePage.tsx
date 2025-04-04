@@ -14,12 +14,18 @@ const HomePage = () => {
             <div>
               <h2 className="text-navy mb-6">Why Choose Kairos IT Services</h2>
               <p className="text-gray-600 mb-6">
-                We take pride in offering premium IT solutions that enhance your business operations. 
-                Our commitment to quality, customer satisfaction, and exceptional service 
-                sets us apart from the competition.
+                We take pride in offering premium IT solutions including POS systems, inventory management, 
+                and comprehensive security solutions. Our commitment to quality, customer satisfaction, 
+                and exceptional service sets us apart from the competition.
               </p>
               <ul className="space-y-3">
-                {["Expert Technical Support", "Customized Solutions", "Seamless Integration", "Ongoing Training & Support"].map((item, index) => (
+                {[
+                  "Expert Technical Support",
+                  "Customized Solutions", 
+                  "Seamless Integration", 
+                  "Advanced Security Systems",
+                  "Ongoing Training & Support"
+                ].map((item, index) => (
                   <li key={index} className="flex items-start">
                     <span className="text-gold mr-2">✓</span>
                     <span>{item}</span>

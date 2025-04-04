@@ -61,7 +61,7 @@ const ContactPage = () => {
               
               <div>
                 <h3 className="text-lg font-medium mb-2">Contact</h3>
-                <p className="text-gray-600">Email: info@kairositservices.com</p>
+                <p className="text-gray-600">Email: marketing@kairosit.co.za</p>
                 <p className="text-gray-600">Phone: (123) 456-7890</p>
               </div>
               

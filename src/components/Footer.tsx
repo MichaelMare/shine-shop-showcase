@@ -42,7 +42,7 @@ const Footer = () => {
             <address className="not-italic text-gray-300 space-y-2">
               <p>123 Business Avenue</p>
               <p>City, ST 12345</p>
-              <p>Email: info@kairositservices.com</p>
+              <p>Email: marketing@kairosit.co.za</p>
               <p>Phone: (123) 456-7890</p>
             </address>
           </div>
