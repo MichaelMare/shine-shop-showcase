@@ -39,7 +39,7 @@ const ContactPage = () => {
         <div className="text-center mb-12">
           <h1 className="text-navy mb-4">Contact Us</h1>
           <p className="text-gray-600 max-w-3xl mx-auto">
-            Have questions about our products or services? We're here to help! 
+            Have questions about our IT solutions or services? We're here to help! 
             Fill out the form below and our team will get back to you as soon as possible.
           </p>
         </div>
@@ -61,7 +61,7 @@ const ContactPage = () => {
               
               <div>
                 <h3 className="text-lg font-medium mb-2">Contact</h3>
-                <p className="text-gray-600">Email: info@brandname.com</p>
+                <p className="text-gray-600">Email: info@kairositservices.com</p>
                 <p className="text-gray-600">Phone: (123) 456-7890</p>
               </div>
               

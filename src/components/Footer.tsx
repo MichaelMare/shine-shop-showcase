@@ -9,9 +9,9 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Brand<span className="text-gold">Name</span></h3>
+            <h3 className="text-xl font-bold mb-4">Kairos<span className="text-gold">IT Services</span></h3>
             <p className="text-gray-300 mb-4">
-              Providing quality products since 2023.
+              Providing quality IT solutions since 2023.
               We pride ourselves on customer satisfaction and product excellence.
             </p>
           </div>
@@ -42,14 +42,14 @@ const Footer = () => {
             <address className="not-italic text-gray-300 space-y-2">
               <p>123 Business Avenue</p>
               <p>City, ST 12345</p>
-              <p>Email: info@brandname.com</p>
+              <p>Email: info@kairositservices.com</p>
               <p>Phone: (123) 456-7890</p>
             </address>
           </div>
         </div>
         
         <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-          <p>&copy; {currentYear} BrandName. All rights reserved.</p>
+          <p>&copy; {currentYear} Kairos IT Services. All rights reserved.</p>
         </div>
       </div>
     </footer>

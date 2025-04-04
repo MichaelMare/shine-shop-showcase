@@ -7,18 +7,18 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="mb-6 leading-tight">
-            Quality Products for <span className="text-gold">Modern Living</span>
+            Premium IT Solutions for <span className="text-gold">Modern Businesses</span>
           </h1>
           <p className="text-lg md:text-xl mb-10 text-gray-200">
-            Discover our curated collection of premium products designed to enhance your lifestyle. 
-            From stylish home decor to innovative electronics, we offer quality solutions for modern living.
+            Discover our curated selection of top-tier IT solutions designed to streamline your operations. 
+            From point-of-sale systems to inventory management software, Kairos IT Services provides the tools you need to succeed.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link to="/products" className="btn-secondary">
-              Browse Collection
+              Explore Solutions
             </Link>
             <Link to="/contact" className="btn-primary">
-              Contact Us
+              Get in Touch
             </Link>
           </div>
         </div>
