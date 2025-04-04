@@ -46,10 +46,10 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>123 Business Avenue</p>
-              <p>City, ST 12345</p>
+              <p>15 Sophia Street</p>
+              <p>Somerset West, Western Cape 7130</p>
               <p>Email: marketing@kairosit.co.za</p>
-              <p>Phone: (123) 456-7890</p>
+              <p>Phone: (+27) 82 708 5927</p>
             </address>
           </div>
         </div>

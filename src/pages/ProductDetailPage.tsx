@@ -58,7 +58,7 @@ const ProductDetailPage = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Product image */}
-          <div className="bg-gray-100 rounded-lg overflow-hidden">
+          <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
             <img 
               src={product.image} 
               alt={product.name} 
@@ -70,7 +70,7 @@ const ProductDetailPage = () => {
           <div>
             <h1 className="text-navy mb-4">{product.name}</h1>
             <p className="text-3xl font-bold text-navy mb-6">${product.price.toFixed(2)}</p>
-            <p className="text-gray-600 mb-6">{product.description}</p>
+            <p className="text-gray-600 mb-6 text-lg">{product.description}</p>
             
             <div className="mb-8">
               <h3 className="text-lg font-semibold mb-3">Product Features:</h3>
@@ -84,12 +84,32 @@ const ProductDetailPage = () => {
               </ul>
             </div>
 
+            {(product.importable || product.repairable) && (
+              <div className="mb-8 p-4 bg-gray-100 rounded-lg">
+                <h3 className="text-lg font-semibold mb-2">Services Available:</h3>
+                <ul className="space-y-1">
+                  {product.importable && (
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      <span>Available for import</span>
+                    </li>
+                  )}
+                  {product.repairable && (
+                    <li className="flex items-center">
+                      <span className="text-green-500 mr-2">✓</span>
+                      <span>Repair services available</span>
+                    </li>
+                  )}
+                </ul>
+              </div>
+            )}
+
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="btn-secondary">
                 Add to Cart
               </button>
               <button className="btn-primary">
-                Buy Now
+                Contact Us About This Product
               </button>
             </div>
 

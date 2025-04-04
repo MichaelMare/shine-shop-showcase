@@ -19,7 +19,7 @@ export const products: Product[] = [
     description: "A comprehensive point-of-sale solution designed for restaurants and retail businesses. PixelPoint POS combines powerful functionality with an intuitive interface for seamless operations.",
     price: 1999.99,
     category: "Point of Sale",
-    image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
     details: [
       "User-friendly touchscreen interface",
       "Integrated payment processing",
@@ -35,7 +35,7 @@ export const products: Product[] = [
     description: "MarketMan is an inventory management and procurement platform that helps restaurants and food service businesses optimize their supply chain, reduce costs, and minimize waste.",
     price: 1499.99,
     category: "Inventory Management",
-    image: "https://images.unsplash.com/photo-1460574283810-2aab119d8511?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
     details: [
       "Real-time inventory tracking",
       "Automated purchase orders",
@@ -47,18 +47,18 @@ export const products: Product[] = [
   },
   {
     id: "procurant",
-    name: "Procurant",
-    description: "Procurant provides cloud-based solutions for the global food supply chain, connecting buyers, suppliers, and transportation providers to streamline ordering, fulfillment, and payment processes.",
+    name: "Procurant Task & Sensors",
+    description: "Procurant Task and Sensors provides advanced monitoring solutions and task management for the global food supply chain, ensuring food safety, quality compliance, and operational efficiency.",
     price: 2499.99,
     category: "Supply Chain Management",
-    image: "https://images.unsplash.com/photo-1498936178812-4b2e558d2937?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1563770660941-10349f6eee30?auto=format&fit=crop&w=800&q=80",
     details: [
-      "End-to-end supply chain visibility",
-      "Quality compliance management",
-      "Advanced order management",
-      "Real-time transportation tracking",
-      "Supplier performance analytics",
-      "Mobile accessibility for on-the-go management"
+      "Real-time temperature monitoring sensors",
+      "Automated task scheduling and verification",
+      "Food safety compliance tracking",
+      "Quality assurance checklists",
+      "Mobile task management application",
+      "Customizable alerts and notifications"
     ]
   },
   {
@@ -67,7 +67,7 @@ export const products: Product[] = [
     description: "Advanced PAR 3M technology solutions for modern businesses, offering streamlined operations, enhanced efficiency, and robust security features.",
     price: 1899.99,
     category: "Business Solutions",
-    image: "https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
     details: [
       "Comprehensive business management tools",
       "Integrated payment processing",
@@ -85,7 +85,7 @@ export const products: Product[] = [
     description: "High-precision water meters for residential and commercial applications, providing accurate measurement and monitoring of water consumption.",
     price: 299.99,
     category: "Utility Meters",
-    image: "https://images.unsplash.com/photo-1585731601359-faba3d8a7450?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=800&q=80",
     details: [
       "Precision measurement technology",
       "Durable and weather-resistant design",
@@ -103,7 +103,7 @@ export const products: Product[] = [
     description: "Advanced electrical meters for monitoring and measuring electricity consumption in residential, commercial, and industrial settings.",
     price: 349.99,
     category: "Utility Meters",
-    image: "https://images.unsplash.com/photo-1610935591850-9a3bf358c4a2?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1534340805425-21a2429f092c?auto=format&fit=crop&w=800&q=80",
     details: [
       "Accurate electricity consumption measurement",
       "Smart grid compatibility",
