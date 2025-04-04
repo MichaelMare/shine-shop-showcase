@@ -9,7 +9,13 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">Kairos<span className="text-gold">IT Services</span></h3>
+            <div className="mb-4">
+              <img 
+                src="/public/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png" 
+                alt="Kairos IT Services Logo" 
+                className="h-12 bg-white p-1 rounded"
+              />
+            </div>
             <p className="text-gray-300 mb-4">
               Providing quality IT solutions since 2023.
               We pride ourselves on customer satisfaction and product excellence.

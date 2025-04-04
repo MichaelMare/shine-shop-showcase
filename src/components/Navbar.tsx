@@ -13,8 +13,12 @@ const Navbar = () => {
   return (
     <nav className="bg-white shadow-md py-4">
       <div className="container mx-auto px-4 flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold text-navy">
-          Kairos<span className="text-gold">IT Services</span>
+        <Link to="/" className="flex items-center">
+          <img 
+            src="/public/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png" 
+            alt="Kairos IT Services Logo" 
+            className="h-12"
+          />
         </Link>
 
         {/* Desktop menu */}
