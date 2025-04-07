@@ -65,11 +65,13 @@ export default {
 				},
 				navy: {
 					DEFAULT: '#0f3460',
-					light: '#1a4b85'
+					light: '#1a4b85',
+					dark: '#0a2346'
 				},
 				gold: {
 					DEFAULT: '#d4af37',
-					light: '#e0c158'
+					light: '#e0c158',
+					dark: '#c19b20'
 				},
 			},
 			borderRadius: {

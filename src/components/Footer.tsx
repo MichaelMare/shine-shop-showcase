@@ -23,7 +23,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-semibold mb-4 text-gold">Quick Links</h4>
             <ul className="space-y-2">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-gold transition-colors">
@@ -44,7 +44,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
+            <h4 className="text-lg font-semibold mb-4 text-gold">Contact Us</h4>
             <address className="not-italic text-gray-300 space-y-2">
               <p>16 Forest Walk</p>
               <p>325 Forest Walk Crescent</p>
@@ -55,7 +55,7 @@ const Footer = () => {
           </div>
         </div>
         
-        <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
+        <div className="border-t border-gold/30 mt-8 pt-8 text-center text-gray-300">
           <p>&copy; {currentYear} Kairos IT Services. All rights reserved.</p>
         </div>
       </div>

@@ -11,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-white shadow-md py-4">
+    <nav className="bg-white shadow-md py-4 border-b-2 border-gold/20">
       <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
         {/* Mobile menu button */}
         <div className="md:hidden w-full flex justify-end mb-4">
@@ -38,17 +38,17 @@ const Navbar = () => {
         {/* Desktop menu */}
         <ul className="hidden md:flex space-x-8 justify-center w-full">
           <li>
-            <Link to="/" className="text-gray-700 hover:text-navy font-medium">
+            <Link to="/" className="text-navy hover:text-gold transition-colors duration-200 font-medium">
               Home
             </Link>
           </li>
           <li>
-            <Link to="/products" className="text-gray-700 hover:text-navy font-medium">
+            <Link to="/products" className="text-navy hover:text-gold transition-colors duration-200 font-medium">
               Products
             </Link>
           </li>
           <li>
-            <Link to="/contact" className="text-gray-700 hover:text-navy font-medium">
+            <Link to="/contact" className="text-navy hover:text-gold transition-colors duration-200 font-medium">
               Contact
             </Link>
           </li>
@@ -57,12 +57,12 @@ const Navbar = () => {
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden container mx-auto px-4 py-3 animate-fade-in">
+        <div className="md:hidden container mx-auto px-4 py-3 animate-fade-in bg-white shadow-lg rounded-b-lg">
           <ul className="flex flex-col space-y-4">
             <li>
               <Link 
                 to="/" 
-                className="block text-gray-700 hover:text-navy font-medium"
+                className="block text-navy hover:text-gold transition-colors duration-200 font-medium"
                 onClick={toggleMenu}
               >
                 Home
@@ -71,7 +71,7 @@ const Navbar = () => {
             <li>
               <Link 
                 to="/products" 
-                className="block text-gray-700 hover:text-navy font-medium"
+                className="block text-navy hover:text-gold transition-colors duration-200 font-medium"
                 onClick={toggleMenu}
               >
                 Products
@@ -80,7 +80,7 @@ const Navbar = () => {
             <li>
               <Link 
                 to="/contact" 
-                className="block text-gray-700 hover:text-navy font-medium"
+                className="block text-navy hover:text-gold transition-colors duration-200 font-medium"
                 onClick={toggleMenu}
               >
                 Contact
