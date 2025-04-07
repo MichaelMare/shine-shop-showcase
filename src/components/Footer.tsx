@@ -18,7 +18,7 @@ const Footer = () => {
             </div>
             <p className="text-gray-300 mb-4">
               Providing quality IT solutions since 2023.
-              We pride ourselves on customer satisfaction and product excellence.
+              We pride ourselves on integrity, honesty, customer satisfaction and product excellence.
             </p>
           </div>
           
@@ -46,8 +46,9 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact Us</h4>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>15 Sophia Street</p>
-              <p>Somerset West, Western Cape 7130</p>
+              <p>16 Forest Walk</p>
+              <p>325 Forest Walk Crescent</p>
+              <p>Faerie Glen, Pretoria, 0081</p>
               <p>Email: marketing@kairosit.co.za</p>
               <p>Phone: (+27) 82 708 5927</p>
             </address>

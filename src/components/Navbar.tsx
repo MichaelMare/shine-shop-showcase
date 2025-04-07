@@ -24,19 +24,19 @@ const Navbar = () => {
           </button>
         </div>
         
-        {/* Centered logo */}
-        <div className="flex justify-center w-full md:w-auto">
+        {/* Centered logo for both mobile and desktop */}
+        <div className="flex justify-center w-full">
           <Link to="/" className="flex items-center">
             <img 
               src="/public/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png" 
               alt="Kairos IT Services Logo" 
-              className="h-16 md:h-20"
+              className="h-20 md:h-24"
             />
           </Link>
         </div>
 
         {/* Desktop menu */}
-        <ul className="hidden md:flex space-x-8">
+        <ul className="hidden md:flex space-x-8 justify-center w-full">
           <li>
             <Link to="/" className="text-gray-700 hover:text-navy font-medium">
               Home

@@ -42,6 +42,9 @@ const ContactPage = () => {
             Have questions about our IT solutions or services? We're here to help! 
             Fill out the form below and our team will get back to you as soon as possible.
           </p>
+          <p className="text-navy font-semibold mt-4">
+            At Kairos IT Services, we value integrity and honesty in all our business dealings.
+          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto">
@@ -53,23 +56,23 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-lg font-medium mb-2">Visit Us</h3>
                 <address className="not-italic text-gray-600">
-                  123 Business Avenue<br />
-                  City, ST 12345<br />
-                  United States
+                  16 Forest Walk<br />
+                  325 Forest Walk Crescent<br />
+                  Faerie Glen, Pretoria, 0081
                 </address>
               </div>
               
               <div>
                 <h3 className="text-lg font-medium mb-2">Contact</h3>
                 <p className="text-gray-600">Email: marketing@kairosit.co.za</p>
-                <p className="text-gray-600">Phone: (123) 456-7890</p>
+                <p className="text-gray-600">Phone: (+27) 82 708 5927</p>
               </div>
               
               <div>
                 <h3 className="text-lg font-medium mb-2">Business Hours</h3>
-                <p className="text-gray-600">Monday - Friday: 9AM - 5PM</p>
-                <p className="text-gray-600">Saturday: 10AM - 2PM</p>
-                <p className="text-gray-600">Sunday: Closed</p>
+                <p className="text-gray-600">Monday - Friday: 08:30 - 16:30</p>
+                <p className="text-gray-600">Saturday - Sunday: Closed</p>
+                <p className="text-gray-600 italic mt-2">Available for emergencies outside business hours</p>
               </div>
             </div>
           </div>
@@ -141,7 +144,7 @@ const ContactPage = () => {
               
               <button
                 type="submit"
-                className="w-full btn-primary mt-4"
+                className="w-full bg-navy hover:bg-navy-light text-white py-2 px-4 rounded-md transition-colors duration-300"
               >
                 Send Message
               </button>
