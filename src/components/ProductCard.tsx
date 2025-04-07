@@ -45,8 +45,7 @@ const ProductCard = ({ product }: ProductCardProps) => {
             ? `${product.description.substring(0, 100)}...` 
             : product.description}
         </p>
-        <div className="flex justify-between items-center">
-          <span className="text-lg font-bold text-navy">${product.price.toFixed(2)}</span>
+        <div className="flex justify-end items-center">
           <Link 
             to={`/products/${product.id}`}
             className="px-4 py-2 bg-navy text-white rounded hover:bg-navy-light transition-colors"

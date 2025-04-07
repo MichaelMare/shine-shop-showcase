@@ -69,7 +69,6 @@ const ProductDetailPage = () => {
           {/* Product details */}
           <div>
             <h1 className="text-navy mb-4">{product.name}</h1>
-            <p className="text-3xl font-bold text-navy mb-6">${product.price.toFixed(2)}</p>
             <p className="text-gray-600 mb-6 text-lg">{product.description}</p>
             
             <div className="mb-8">
@@ -105,9 +104,6 @@ const ProductDetailPage = () => {
             )}
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-secondary">
-                Add to Cart
-              </button>
               <button className="btn-primary">
                 Contact Us About This Product
               </button>

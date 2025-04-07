@@ -51,9 +51,10 @@ export const products: Product[] = [
     description: "Procurant Task and Sensors provides advanced monitoring solutions and task management for the global food supply chain, ensuring food safety, quality compliance, and operational efficiency.",
     price: 2499.99,
     category: "Supply Chain Management",
-    image: "https://images.unsplash.com/photo-1563770660941-10349f6eee30?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
     details: [
-      "Real-time temperature monitoring sensors",
+      "Monnit temperature and humidity monitoring sensors",
+      "Real-time temperature monitoring technology",
       "Automated task scheduling and verification",
       "Food safety compliance tracking",
       "Quality assurance checklists",
@@ -67,14 +68,15 @@ export const products: Product[] = [
     description: "Advanced PAR 3M technology solutions for modern businesses, offering streamlined operations, enhanced efficiency, and robust security features.",
     price: 1899.99,
     category: "Business Solutions",
-    image: "https://images.unsplash.com/photo-1558494949-ef010cbdcc31?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1556742031-ebd9a1ce3ff8?auto=format&fit=crop&w=800&q=80",
     details: [
+      "3M Drive-thru communication systems",
+      "Digital drive-thru menu boards",
       "Comprehensive business management tools",
       "Integrated payment processing",
       "Advanced security protocols",
       "Customizable business workflows",
-      "Real-time analytics and reporting",
-      "Cloud-based data management"
+      "Real-time analytics and reporting"
     ],
     importable: true,
     repairable: true
@@ -85,8 +87,9 @@ export const products: Product[] = [
     description: "High-precision water meters for residential and commercial applications, providing accurate measurement and monitoring of water consumption.",
     price: 299.99,
     category: "Utility Meters",
-    image: "https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
     details: [
+      "Digital water meter displays",
       "Precision measurement technology",
       "Durable and weather-resistant design",
       "Easy installation and maintenance",
@@ -103,8 +106,9 @@ export const products: Product[] = [
     description: "Advanced electrical meters for monitoring and measuring electricity consumption in residential, commercial, and industrial settings.",
     price: 349.99,
     category: "Utility Meters",
-    image: "https://images.unsplash.com/photo-1534340805425-21a2429f092c?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1565138146061-e29b079736c0?auto=format&fit=crop&w=800&q=80",
     details: [
+      "Digital electrical meter displays",
       "Accurate electricity consumption measurement",
       "Smart grid compatibility",
       "Remote monitoring capabilities",
