@@ -7,7 +7,10 @@ const Hero = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center">
           <h1 className="mb-6 leading-tight">
-            Premium IT Solutions for <span className="text-gold">Modern Businesses</span>
+            <span className="text-white">Premium</span>{" "}
+            <span className="text-orange">IT Solutions</span>{" "}
+            <span className="text-white">for</span>{" "}
+            <span className="text-orange font-bold">Modern Businesses</span>
           </h1>
           <p className="text-lg md:text-xl mb-10 text-gray-200">
             Discover our curated selection of top-tier IT solutions designed to streamline your operations. 
