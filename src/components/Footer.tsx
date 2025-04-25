@@ -11,7 +11,7 @@ const Footer = () => {
           <div>
             <div className="mb-4">
               <img 
-                src="/public/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png" 
+                src="/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png" 
                 alt="Kairos IT Services Logo" 
                 className="h-12 bg-white p-1 rounded"
               />

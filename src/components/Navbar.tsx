@@ -28,7 +28,7 @@ const Navbar = () => {
         <div className="flex justify-center w-full">
           <Link to="/" className="flex items-center">
             <img 
-              src="/public/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png" 
+              src="/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png" 
               alt="Kairos IT Services Logo" 
               className="h-20 md:h-24"
             />
