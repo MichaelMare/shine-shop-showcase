@@ -1,3 +1,4 @@
+
 export type Product = {
   id: string;
   name: string;
@@ -35,16 +36,18 @@ export const products: Product[] = [
   {
     id: "pixelpoint-pos",
     name: "PixelPoint POS",
-    description: "A comprehensive point-of-sale solution designed for restaurants and retail businesses. PixelPoint POS combines powerful functionality with an intuitive interface for seamless operations.",
+    description: "PixelPoint POS is an enterprise-grade point of sale solution built for the hospitality industry. With 30+ years of innovation, this robust system provides comprehensive tools for order management, kitchen operations, and guest service optimization.",
     price: 1999.99,
     category: "Point of Sale",
     image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
     details: [
-      "User-friendly touchscreen interface",
-      "Integrated payment processing",
-      "Inventory management and reporting",
-      "Employee scheduling and management",
-      "Customer loyalty program integration",
+      "Intuitive touchscreen interface for fast order entry",
+      "Real-time sales analytics and reporting",
+      "Integrated inventory and labor management",
+      "Enterprise menu management across multiple locations",
+      "Flexible payment processing with EMV compliance",
+      "Kitchen display system integration",
+      "Customer loyalty and gift card programs",
       "Cloud-based data storage and backup"
     ]
   },
@@ -83,19 +86,20 @@ export const products: Product[] = [
   },
   {
     id: "par-3m",
-    name: "PAR 3M Solutions",
-    description: "Advanced PAR 3M technology solutions for modern businesses, offering streamlined operations, enhanced efficiency, and robust security features.",
+    name: "PAR 3M Drive-Thru Solutions",
+    description: "Enhance your drive-thru experience with PAR 3M's advanced communication systems. Featuring crystal-clear sound technology, these systems ensure accurate order taking and improved customer satisfaction in high-volume drive-thru environments.",
     price: 1899.99,
-    category: "Business Solutions",
+    category: "Drive-Thru Systems",
     image: "https://images.unsplash.com/photo-1556742031-ebd9a1ce3ff8?auto=format&fit=crop&w=800&q=80",
     details: [
-      "3M Drive-thru communication systems",
-      "Digital drive-thru menu boards",
-      "Comprehensive business management tools",
-      "Integrated payment processing",
-      "Advanced security protocols",
-      "Customizable business workflows",
-      "Real-time analytics and reporting"
+      "3M™ G5 All-in-One Headset System for drive-thru",
+      "Noise-cancellation technology for clear communication",
+      "Durable construction for high-volume restaurants",
+      "Wireless Base Station with enhanced range",
+      "Vehicle detection systems and order confirmation displays",
+      "Digital menu board integration capabilities",
+      "Weatherproof outdoor audio components",
+      "Remote diagnostics and support options"
     ],
     importable: true,
     repairable: true
