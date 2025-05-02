@@ -86,7 +86,7 @@ export const products: Product[] = [
   },
   {
     id: "par-3m",
-    name: "PAR 3M Drive-Thru Solutions",
+    name: "PAR Drive-thru Solutions",
     description: "Enhance your drive-thru experience with PAR 3M's advanced communication systems. Featuring crystal-clear sound technology, these systems ensure accurate order taking and improved customer satisfaction in high-volume drive-thru environments.",
     price: 1899.99,
     category: "Drive-Thru Systems",
