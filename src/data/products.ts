@@ -13,6 +13,26 @@ export type Product = {
 // Sample product data
 export const products: Product[] = [
   {
+    id: "it-support-networking",
+    name: "IT Support & Networking",
+    description: "Comprehensive IT support and networking solutions for businesses of all sizes. Our expert services include hardware troubleshooting, software installation, and network optimization to keep your business running smoothly.",
+    price: 1299.99,
+    category: "IT Services",
+    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    details: [
+      "24/7 IT support and troubleshooting",
+      "Network setup and optimization",
+      "Hardware procurement and installation",
+      "Software licensing and management",
+      "Security implementation and monitoring",
+      "Business continuity planning",
+      "Cloud integration services",
+      "Employee training and support"
+    ],
+    importable: true,
+    repairable: true
+  },
+  {
     id: "pixelpoint-pos",
     name: "PixelPoint POS",
     description: "A comprehensive point-of-sale solution designed for restaurants and retail businesses. PixelPoint POS combines powerful functionality with an intuitive interface for seamless operations.",
@@ -114,26 +134,6 @@ export const products: Product[] = [
       "Tamper-proof design",
       "Digital display for easy reading",
       "Power quality monitoring features"
-    ],
-    importable: true,
-    repairable: true
-  },
-  {
-    id: "it-support-networking",
-    name: "IT Support & Networking",
-    description: "Comprehensive IT support and networking solutions for businesses of all sizes. Our expert services include hardware troubleshooting, software installation, and network optimization to keep your business running smoothly.",
-    price: 1299.99,
-    category: "IT Services",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
-    details: [
-      "24/7 IT support and troubleshooting",
-      "Network setup and optimization",
-      "Hardware procurement and installation",
-      "Software licensing and management",
-      "Security implementation and monitoring",
-      "Business continuity planning",
-      "Cloud integration services",
-      "Employee training and support"
     ],
     importable: true,
     repairable: true
