@@ -90,7 +90,7 @@ export const products: Product[] = [
     description: "Enhance your drive-thru experience with PAR 3M's advanced communication systems. Featuring crystal-clear sound technology, these systems ensure accurate order taking and improved customer satisfaction in high-volume drive-thru environments.",
     price: 1899.99,
     category: "Drive-Thru Systems",
-    image: "https://images.unsplash.com/photo-1556742031-ebd9a1ce3ff8?auto=format&fit=crop&w=800&q=80",
+    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=800&q=80",
     details: [
       "3M™ G5 All-in-One Headset System for drive-thru",
       "Noise-cancellation technology for clear communication",
