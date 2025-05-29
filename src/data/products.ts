@@ -35,19 +35,24 @@ export const products: Product[] = [
   {
     id: "pixelpoint-pos",
     name: "PixelPoint POS",
-    description: "PixelPoint POS is an enterprise-grade point of sale solution built for the hospitality industry. With 30+ years of innovation, this robust system provides comprehensive tools for order management, kitchen operations, and guest service optimization.",
+    description: "PAR PixelPoint® POS offers a full, out-of-the-box restaurant management solution that is feature rich, secure, flexible, and scalable. From Table Service and Fine Dining to Quick Service, PAR PixelPoint® empowers aspiring and entrepreneurial restaurant operators to meet hospitality business needs.",
     price: 1999.99,
     category: "Point of Sale",
     image: "/lovable-uploads/fd391741-9433-444f-b91d-4edf4aa5db87.png",
     details: [
-      "Intuitive touchscreen interface for fast order entry",
-      "Real-time sales analytics and reporting",
-      "Integrated inventory and labor management",
-      "Enterprise menu management across multiple locations",
-      "Flexible payment processing with EMV compliance",
-      "Kitchen display system integration",
-      "Customer loyalty and gift card programs",
-      "Cloud-based data storage and backup"
+      "130+ comprehensive restaurant features for any size operation",
+      "Hybrid cloud format with on-premise POS server for reliability",
+      "Advanced Menu Management and standardization capabilities",
+      "Advanced KVS (Kitchen Video System) functionality",
+      "Labor and Inventory reporting with real-time analytics",
+      "Member/Customer database management",
+      "Store operations dashboards and scheduled reports",
+      "Integration network with 50+ partners across all regions",
+      "Comprehensive Loss Prevention features to prevent theft and waste",
+      "Above Store Cloud Capabilities for multi-unit management",
+      "Online ordering APIs for seamless digital integration",
+      "Operates offline while preserving sales records",
+      "Backed up data at every stage with enterprise security"
     ]
   },
   {
