@@ -1,4 +1,3 @@
-
 export type Product = {
   id: string;
   name: string;
@@ -39,7 +38,7 @@ export const products: Product[] = [
     description: "PixelPoint POS is an enterprise-grade point of sale solution built for the hospitality industry. With 30+ years of innovation, this robust system provides comprehensive tools for order management, kitchen operations, and guest service optimization.",
     price: 1999.99,
     category: "Point of Sale",
-    image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/fd391741-9433-444f-b91d-4edf4aa5db87.png",
     details: [
       "Intuitive touchscreen interface for fast order entry",
       "Real-time sales analytics and reporting",
