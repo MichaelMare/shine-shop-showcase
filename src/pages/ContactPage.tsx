@@ -56,7 +56,6 @@ const ContactPage = () => {
               <div>
                 <h3 className="text-lg font-medium mb-2">Visit Us</h3>
                 <address className="not-italic text-gray-600">
-                  16 Forest Walk<br />
                   325 Forest Walk Crescent<br />
                   Faerie Glen, Pretoria, 0081
                 </address>

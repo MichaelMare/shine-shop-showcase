@@ -46,7 +46,6 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4 text-gold">Contact Us</h4>
             <address className="not-italic text-gray-300 space-y-2">
-              <p>16 Forest Walk</p>
               <p>325 Forest Walk Crescent</p>
               <p>Faerie Glen, Pretoria, 0081</p>
               <p>Email: marketing@kairosit.co.za</p>
