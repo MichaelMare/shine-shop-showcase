@@ -94,7 +94,7 @@ export const products: Product[] = [
     description: "Improve service velocity and accuracy in your drive-thru. Supercharge your most profitable service channel with our guest-friendly drive-thru solution. PAR Drive-Thru is a complete solution that helps your crew and your brand deliver fast, accurate service and the convenience that guests demand.",
     price: 1899.99,
     category: "Drive-Thru Systems",
-    image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=800&q=80",
+    image: "/lovable-uploads/03223f74-d68a-428b-a29b-5e126c772a26.png",
     details: [
       "Maximize throughput with the intuitive PAR Drive-Thru Timer",
       "Gamify speed-of-service improvements with crew-facing dashboard that promotes competition among stores",
