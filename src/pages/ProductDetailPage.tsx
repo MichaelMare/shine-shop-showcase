@@ -58,11 +58,13 @@ const ProductDetailPage = () => {
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Product image */}
-          <div className="bg-gray-100 rounded-lg overflow-hidden shadow-lg">
+          <div className="bg-white rounded-lg overflow-hidden shadow-lg p-8 flex items-center justify-center">
             <img 
               src={product.image} 
               alt={product.name} 
-              className="w-full h-full object-cover"
+              className={`max-w-full max-h-96 object-contain ${
+                product.id === 'pixelpoint-pos' ? 'w-auto h-auto' : 'w-full h-full object-cover'
+              }`}
             />
           </div>
 
