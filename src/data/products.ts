@@ -91,19 +91,19 @@ export const products: Product[] = [
   {
     id: "par-3m",
     name: "PAR Drive-thru Solutions",
-    description: "Enhance your drive-thru experience with PAR 3M's advanced communication systems. Featuring crystal-clear sound technology, these systems ensure accurate order taking and improved customer satisfaction in high-volume drive-thru environments.",
+    description: "Improve service velocity and accuracy in your drive-thru. Supercharge your most profitable service channel with our guest-friendly drive-thru solution. PAR Drive-Thru is a complete solution that helps your crew and your brand deliver fast, accurate service and the convenience that guests demand.",
     price: 1899.99,
     category: "Drive-Thru Systems",
     image: "https://images.unsplash.com/photo-1487887235947-a955ef187fcc?auto=format&fit=crop&w=800&q=80",
     details: [
-      "3M™ G5 All-in-One Headset System for drive-thru",
-      "Noise-cancellation technology for clear communication",
-      "Durable construction for high-volume restaurants",
-      "Wireless Base Station with enhanced range",
-      "Vehicle detection systems and order confirmation displays",
-      "Digital menu board integration capabilities",
-      "Weatherproof outdoor audio components",
-      "Remote diagnostics and support options"
+      "Maximize throughput with the intuitive PAR Drive-Thru Timer",
+      "Gamify speed-of-service improvements with crew-facing dashboard that promotes competition among stores",
+      "Improve order accuracy with crystal-clear headset communications",
+      "Complete drive-thru solution for fast, accurate service",
+      "Guest-friendly interface that enhances customer experience",
+      "Crew management tools to optimize workflow efficiency",
+      "Real-time performance monitoring and analytics",
+      "Integration capabilities with existing POS systems"
     ],
     importable: true,
     repairable: true
