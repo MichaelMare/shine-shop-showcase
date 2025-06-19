@@ -1,9 +1,10 @@
-
 import { useState, useEffect } from "react";
 import { Product, products } from "../data/products";
 import ProductCard from "../components/ProductCard";
 import SearchBar from "../components/SearchBar";
 import { SkeletonCard } from "../components/ui/skeleton-card";
+import SEOHead from "../components/SEOHead";
+import Breadcrumb from "../components/Breadcrumb";
 
 const ProductsPage = () => {
   const [allProducts, setAllProducts] = useState<Product[]>([]);
@@ -11,6 +12,9 @@ const ProductsPage = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>("All");
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [loading, setLoading] = useState(true);
+  const breadcrumbItems = [
+    { label: "Products" }
+  ];
 
   // Get unique categories
   const categories = ["All", ...new Set(products.map(product => product.category))];
@@ -54,7 +58,16 @@ const ProductsPage = () => {
 
   return (
     <div className="py-12">
+      <SEOHead 
+        title="Products"
+        description="Browse our complete collection of premium IT products including PixelPoint POS, MarketMan inventory management, PAR drive-thru solutions, and utility meters."
+        keywords="POS systems, PixelPoint, MarketMan, inventory management, PAR 3M, drive-thru systems, utility meters, IT products"
+      />
+      
       <div className="container mx-auto px-4">
+        {/* Breadcrumb navigation */}
+        <Breadcrumb items={breadcrumbItems} className="mb-8" />
+        
         <div className="text-center mb-12">
           <h1 className="text-navy mb-4">Our Products</h1>
           <p className="text-gray-600 max-w-3xl mx-auto">

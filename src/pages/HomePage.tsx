@@ -1,10 +1,16 @@
 
 import Hero from "../components/Hero";
 import FeaturedProducts from "../components/FeaturedProducts";
+import SEOHead from "../components/SEOHead";
 
 const HomePage = () => {
   return (
     <div>
+      <SEOHead 
+        title="Home"
+        description="Kairos IT Services - Premium IT solutions including POS systems, inventory management, utility meters, and PAR 3M products. Expert technical support and authorized repair services."
+      />
+      
       <Hero />
       <FeaturedProducts />
       

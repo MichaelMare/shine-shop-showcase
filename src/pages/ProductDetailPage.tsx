@@ -1,8 +1,9 @@
-
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Product, getProductById } from "../data/products";
 import { LoadingSpinner } from "../components/ui/loading-spinner";
+import SEOHead from "../components/SEOHead";
+import Breadcrumb from "../components/Breadcrumb";
 
 const ProductDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -47,21 +48,22 @@ const ProductDetailPage = () => {
     );
   }
 
+  const breadcrumbItems = [
+    { label: "Products", href: "/products" },
+    { label: product.name }
+  ];
+
   return (
     <div className="py-12">
+      <SEOHead 
+        title={product.name}
+        description={product.description}
+        keywords={`${product.name}, ${product.category}, IT services, ${product.importable ? 'import services' : ''} ${product.repairable ? 'repair services' : ''}`.trim()}
+      />
+      
       <div className="container mx-auto px-4">
         {/* Breadcrumb navigation */}
-        <nav className="mb-8" aria-label="Breadcrumb">
-          <ol className="flex flex-wrap text-sm text-gray-600">
-            <li className="after:content-['/'] after:mx-2">
-              <Link to="/" className="hover:text-navy">Home</Link>
-            </li>
-            <li className="after:content-['/'] after:mx-2">
-              <Link to="/products" className="hover:text-navy">Products</Link>
-            </li>
-            <li className="text-gray-900 font-medium truncate">{product.name}</li>
-          </ol>
-        </nav>
+        <Breadcrumb items={breadcrumbItems} className="mb-8" />
 
         <div className="grid md:grid-cols-2 gap-12">
           {/* Product image */}
