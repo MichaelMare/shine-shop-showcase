@@ -2,12 +2,18 @@
 import { useEffect, useState } from "react";
 import { Product, getFeaturedProducts } from "../data/products";
 import ProductCard from "./ProductCard";
+import { SkeletonCard } from "./ui/skeleton-card";
 
 const FeaturedProducts = () => {
   const [featuredProducts, setFeaturedProducts] = useState<Product[]>([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setFeaturedProducts(getFeaturedProducts());
+    // Simulate loading delay
+    setTimeout(() => {
+      setFeaturedProducts(getFeaturedProducts());
+      setLoading(false);
+    }, 300);
   }, []);
 
   return (
@@ -21,11 +27,19 @@ const FeaturedProducts = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {featuredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
-        </div>
+        {loading ? (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[...Array(3)].map((_, index) => (
+              <SkeletonCard key={index} />
+            ))}
+          </div>
+        ) : (
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {featuredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+        )}
       </div>
     </section>
   );

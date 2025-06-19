@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { useParams, Link, useNavigate } from "react-router-dom";
 import { Product, getProductById } from "../data/products";
+import { LoadingSpinner } from "../components/ui/loading-spinner";
 
 const ProductDetailPage = () => {
   const { id } = useParams<{ id: string }>();
@@ -11,19 +12,25 @@ const ProductDetailPage = () => {
 
   useEffect(() => {
     if (id) {
-      const foundProduct = getProductById(id);
-      if (foundProduct) {
-        setProduct(foundProduct);
-      } else {
-        navigate("/not-found");
-      }
+      // Simulate loading delay
+      setTimeout(() => {
+        const foundProduct = getProductById(id);
+        if (foundProduct) {
+          setProduct(foundProduct);
+        } else {
+          navigate("/not-found");
+        }
+        setLoading(false);
+      }, 300);
+    } else {
+      setLoading(false);
     }
-    setLoading(false);
   }, [id, navigate]);
 
   if (loading) {
     return (
       <div className="container mx-auto px-4 py-12 text-center">
+        <LoadingSpinner size="lg" className="mx-auto mb-4" />
         <p>Loading product details...</p>
       </div>
     );
@@ -44,7 +51,7 @@ const ProductDetailPage = () => {
     <div className="py-12">
       <div className="container mx-auto px-4">
         {/* Breadcrumb navigation */}
-        <nav className="mb-8">
+        <nav className="mb-8" aria-label="Breadcrumb">
           <ol className="flex flex-wrap text-sm text-gray-600">
             <li className="after:content-['/'] after:mx-2">
               <Link to="/" className="hover:text-navy">Home</Link>
@@ -62,9 +69,8 @@ const ProductDetailPage = () => {
             <img 
               src={product.image} 
               alt={product.name} 
-              className={`max-w-full max-h-96 object-contain ${
-                product.id === 'pixelpoint-pos' ? 'w-auto h-auto' : 'w-full h-full object-cover'
-              }`}
+              className="max-w-full max-h-96 object-contain"
+              loading="lazy"
             />
           </div>
 
@@ -106,9 +112,9 @@ const ProductDetailPage = () => {
             )}
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="btn-primary">
+              <Link to="/contact" className="btn-primary text-center">
                 Contact Us About This Product
-              </button>
+              </Link>
             </div>
 
             <div className="mt-8 p-4 bg-gray-100 rounded-lg">
