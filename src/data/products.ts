@@ -18,7 +18,7 @@ export const products: Product[] = [
     description: "Comprehensive IT support and networking solutions for businesses of all sizes. Our expert services include hardware troubleshooting, software installation, and network optimization to keep your business running smoothly.",
     price: 1299.99,
     category: "IT Services",
-    image: "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/it-support.jpg",
     details: [
       "24/7 IT support and troubleshooting",
       "Network setup and optimization",
@@ -61,7 +61,7 @@ export const products: Product[] = [
     description: "MarketMan is an inventory management and procurement platform that helps restaurants and food service businesses optimize their supply chain, reduce costs, and minimize waste.",
     price: 1499.99,
     category: "Inventory Management",
-    image: "https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/inventory-management.jpg",
     details: [
       "Real-time inventory tracking",
       "Automated purchase orders",
@@ -77,7 +77,7 @@ export const products: Product[] = [
     description: "Procurant Task and Sensors provides advanced monitoring solutions and task management for the global food supply chain, ensuring food safety, quality compliance, and operational efficiency.",
     price: 2499.99,
     category: "Supply Chain Management",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/sensors.jpg",
     details: [
       "Monnit temperature and humidity monitoring sensors",
       "Real-time temperature monitoring technology",
@@ -114,7 +114,7 @@ export const products: Product[] = [
     description: "High-precision water meters for residential and commercial applications, providing accurate measurement and monitoring of water consumption.",
     price: 299.99,
     category: "Utility Meters",
-    image: "https://images.unsplash.com/photo-1600880292203-757bb62b4baf?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/water-meter.jpg",
     details: [
       "Digital water meter displays",
       "Precision measurement technology",
@@ -133,7 +133,7 @@ export const products: Product[] = [
     description: "Advanced electrical meters for monitoring and measuring electricity consumption in residential, commercial, and industrial settings.",
     price: 349.99,
     category: "Utility Meters",
-    image: "https://images.unsplash.com/photo-1565138146061-e29b079736c0?auto=format&fit=crop&w=800&q=80",
+    image: "/src/assets/electrical-meter.jpg",
     details: [
       "Digital electrical meter displays",
       "Accurate electricity consumption measurement",
