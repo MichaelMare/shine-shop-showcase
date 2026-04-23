@@ -1,73 +1,53 @@
-# Welcome to your Lovable project
+# Kairos IT Services – Product Showcase
 
-## Project info
+A modern, responsive product and services showcase site for **Kairos IT Services**, built with React, TypeScript, Vite, shadcn/ui, and Tailwind CSS.
 
-**URL**: https://lovable.dev/projects/11d5fd23-c6f0-4a24-847c-c3d0f36052f2
+🌐 **Live site:** https://shine-shop-showcase.lovable.app
 
-## How can I edit this code?
+## About
 
-There are several ways of editing your application.
+This site showcases the range of IT products and services offered by Kairos IT Services — including hardware, software, and managed service solutions tailored for modern businesses.
 
-**Use Lovable**
+## Tech Stack
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/11d5fd23-c6f0-4a24-847c-c3d0f36052f2) and start prompting.
+- React 18 – UI framework
 
-Changes made via Lovable will be committed automatically to this repo.
+- TypeScript – Type safety
 
-**Use your preferred IDE**
+- Vite – Build tool & dev server
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- shadcn/ui – Component library
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Tailwind CSS – Utility-first styling
 
-Follow these steps:
+- React Router – Client-side routing
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+- TanStack Query – Data fetching & caching
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+- Lovable – AI-assisted development & deployment
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Getting Started
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+Clone the repo and install dependencies:
 
-**Edit a file directly in GitHub**
+    git clone https://github.com/MichaelMare/shine-shop-showcase.git
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+    cd shine-shop-showcase
 
-**Use GitHub Codespaces**
+    npm install
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+    npm run dev
 
-## What technologies are used for this project?
+The app runs at http://localhost:5173.
 
-This project is built with:
+## Deployment
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+Deployed via Lovable. Push to main to redeploy automatically.
 
-## How can I deploy this project?
+## Brand Colours
 
-Simply open [Lovable](https://lovable.dev/projects/11d5fd23-c6f0-4a24-847c-c3d0f36052f2) and click on Share -> Publish.
+- Navy #0f3460 – headings, nav, primary actions
 
-## Can I connect a custom domain to my Lovable project?
+- Orange #F97316 – CTA buttons, accents, highlights
 
-Yes it is!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+© 2025 Kairos IT Services. All rights reserved.
