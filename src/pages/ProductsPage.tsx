@@ -13,7 +13,7 @@ const ProductsPage = () => {
   const [searchQuery, setSearchQuery] = useState<string>("");
   const [loading, setLoading] = useState(true);
   const breadcrumbItems = [
-    { label: "Products" }
+    { label: "Solutions" }
   ];
 
   // Get unique categories
@@ -57,39 +57,41 @@ const ProductsPage = () => {
   };
 
   return (
-    <div className="py-12">
+    <div className="py-12 md:py-16">
       <SEOHead 
-        title="Products"
-        description="Browse our complete collection of premium IT products including PixelPoint POS, MarketMan inventory management, PAR drive-thru solutions, and utility meters."
-        keywords="POS systems, PixelPoint, MarketMan, inventory management, PAR 3M, drive-thru systems, utility meters, IT products"
+        title="Solutions"
+        description="The systems we implement and support — PixelPoint POS, inventory management, supply-chain sensors, drive-thru, and utility metering — set up and maintained by our own team."
+        keywords="POS systems, PixelPoint, inventory management, PAR, drive-thru systems, utility meters, IT services South Africa"
       />
       
       <div className="container mx-auto px-4">
         {/* Breadcrumb navigation */}
         <Breadcrumb items={breadcrumbItems} className="mb-8" />
         
-        <div className="text-center mb-12">
-          <h1 className="text-navy mb-4">Our Products</h1>
-          <p className="text-gray-600 max-w-3xl mx-auto">
-            Browse our complete collection of premium products. Filter by category or search to find exactly what you're looking for.
+        <div className="max-w-2xl mb-10">
+          <span className="eyebrow">What we do</span>
+          <h1 className="mt-3 text-navy">Solutions we implement &amp; support</h1>
+          <p className="mt-4 text-lg text-slate-600">
+            The core systems we deploy for retail and hospitality operators. Filter by
+            category or search to find what fits your operation.
           </p>
         </div>
 
         {/* Search bar */}
-        <div className="mb-8 max-w-md mx-auto">
+        <div className="mb-8 max-w-md">
           <SearchBar onSearch={handleSearch} />
         </div>
 
         {/* Category filters */}
-        <div className="mb-8 flex flex-wrap justify-center gap-2">
+        <div className="mb-10 flex flex-wrap gap-2">
           {categories.map(category => (
             <button
               key={category}
               onClick={() => handleCategoryChange(category)}
-              className={`px-4 py-2 rounded-full transition-colors ${
+              className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
                 selectedCategory === category
                   ? "bg-navy text-white"
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  : "bg-slate-100 text-slate-600 hover:bg-slate-200"
               }`}
             >
               {category}
@@ -117,7 +119,7 @@ const ProductsPage = () => {
             <p className="text-lg text-gray-600">
               {searchQuery 
                 ? `No products found matching "${searchQuery}"`
-                : "No products found in this category."
+                : "No solutions found in this category."
               }
             </p>
             {searchQuery && (
@@ -134,7 +136,7 @@ const ProductsPage = () => {
         {/* Results summary */}
         {!loading && filteredProducts.length > 0 && (
           <div className="text-center mt-8 text-sm text-gray-600">
-            Showing {filteredProducts.length} of {allProducts.length} products
+            Showing {filteredProducts.length} of {allProducts.length} solutions
           </div>
         )}
       </div>
