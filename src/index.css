@@ -32,18 +32,31 @@
   body {
     @apply bg-background text-foreground;
     font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-semibold tracking-tight text-navy;
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
   }
   h1 {
     @apply text-4xl md:text-5xl lg:text-6xl font-bold;
   }
   h2 {
-    @apply text-2xl md:text-3xl lg:text-4xl;
+    @apply text-3xl md:text-4xl font-bold;
   }
   h3 {
-    @apply text-xl md:text-2xl lg:text-3xl;
+    @apply text-xl md:text-2xl;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Space Grotesk', 'Inter', sans-serif;
+  }
+  .eyebrow {
+    @apply inline-block text-xs font-semibold uppercase tracking-[0.18em] text-orange;
+    font-family: 'Space Grotesk', sans-serif;
   }
 }
 
