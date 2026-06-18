@@ -17,13 +17,14 @@ const FeaturedProducts = () => {
   }, []);
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-20 md:py-24 bg-white">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-12">
-          <h2 className="text-navy mb-4">Featured Products</h2>
-          <p className="text-gray-600 max-w-3xl mx-auto">
-            Explore our handpicked selection of premium products, chosen for their exceptional quality, 
-            design, and value. These featured items represent the best of what we offer.
+        <div className="max-w-2xl mb-12">
+          <span className="eyebrow">What we do</span>
+          <h2 className="mt-3 text-navy">Solutions we implement and support</h2>
+          <p className="mt-4 text-lg text-slate-600">
+            The core systems we deploy for retail and hospitality operators &mdash;
+            each one set up, integrated and maintained by our own team.
           </p>
         </div>
         

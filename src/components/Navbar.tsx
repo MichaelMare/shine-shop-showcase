@@ -1,95 +1,104 @@
+import { useState, useEffect } from "react";
+import { Link, NavLink, useLocation } from "react-router-dom";
+import { Menu, X, ArrowRight } from "lucide-react";
 
-import { useState } from "react";
-import { Link } from "react-router-dom";
-import { Menu, X } from "lucide-react";
+const links = [
+  { to: "/", label: "Home" },
+  { to: "/products", label: "Solutions" },
+  { to: "/contact", label: "Contact" },
+];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const location = useLocation();
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
+  useEffect(() => setIsMenuOpen(false), [location.pathname]);
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const linkClass = ({ isActive }: { isActive: boolean }) =>
+    `text-sm font-medium transition-colors duration-200 ${
+      isActive ? "text-orange" : "text-navy hover:text-orange"
+    }`;
 
   return (
-    <nav className="bg-white shadow-md py-4 border-b-2 border-gold/20">
-      <div className="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center">
-        {/* Mobile menu button */}
-        <div className="md:hidden w-full flex justify-end mb-4">
-          <button 
-            className="text-navy"
-            onClick={toggleMenu}
-            aria-label="Toggle menu"
+    <header
+      className={`sticky top-0 z-50 bg-white transition-shadow duration-200 ${
+        scrolled ? "shadow-md" : "border-b border-slate-200"
+      }`}
+    >
+      <nav className="container mx-auto flex items-center justify-between px-4 py-3">
+        <Link to="/" className="flex items-center" aria-label="Kairos IT Services — home">
+          <img
+            src="/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png"
+            alt="Kairos IT Services"
+            className="h-14 w-auto md:h-16"
+          />
+        </Link>
+
+        {/* Desktop */}
+        <div className="hidden items-center gap-8 md:flex">
+          <ul className="flex items-center gap-8">
+            {links.map((l) => (
+              <li key={l.to}>
+                <NavLink to={l.to} end={l.to === "/"} className={linkClass}>
+                  {l.label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
+          <Link
+            to="/contact"
+            className="group inline-flex items-center gap-2 rounded-md bg-orange px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-orange-dark"
           >
-            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
-        </div>
-        
-        {/* Centered logo for both mobile and desktop */}
-        <div className="flex justify-center w-full">
-          <Link to="/" className="flex items-center">
-            <img 
-              src="/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png" 
-              alt="Kairos IT Services Logo" 
-              className="h-20 md:h-24"
-            />
+            Request a quote
+            <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5" />
           </Link>
         </div>
 
-        {/* Desktop menu */}
-        <ul className="hidden md:flex space-x-8 justify-center w-full">
-          <li>
-            <Link to="/" className="text-navy hover:text-gold transition-colors duration-200 font-medium">
-              Home
-            </Link>
-          </li>
-          <li>
-            <Link to="/products" className="text-navy hover:text-gold transition-colors duration-200 font-medium">
-              Products
-            </Link>
-          </li>
-          <li>
-            <Link to="/contact" className="text-navy hover:text-gold transition-colors duration-200 font-medium">
-              Contact
-            </Link>
-          </li>
-        </ul>
-      </div>
+        {/* Mobile toggle */}
+        <button
+          className="text-navy md:hidden"
+          onClick={() => setIsMenuOpen((v) => !v)}
+          aria-label="Toggle menu"
+          aria-expanded={isMenuOpen}
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+      </nav>
 
       {/* Mobile menu */}
       {isMenuOpen && (
-        <div className="md:hidden container mx-auto px-4 py-3 animate-fade-in bg-white shadow-lg rounded-b-lg">
-          <ul className="flex flex-col space-y-4">
-            <li>
-              <Link 
-                to="/" 
-                className="block text-navy hover:text-gold transition-colors duration-200 font-medium"
-                onClick={toggleMenu}
+        <div className="border-t border-slate-200 bg-white md:hidden">
+          <ul className="container mx-auto flex flex-col gap-1 px-4 py-3">
+            {links.map((l) => (
+              <li key={l.to}>
+                <NavLink
+                  to={l.to}
+                  end={l.to === "/"}
+                  className="block rounded-md px-2 py-2.5 text-base font-medium text-navy hover:bg-slate-50 hover:text-orange"
+                >
+                  {l.label}
+                </NavLink>
+              </li>
+            ))}
+            <li className="pt-2">
+              <Link
+                to="/contact"
+                className="flex items-center justify-center gap-2 rounded-md bg-orange px-5 py-3 font-semibold text-white"
               >
-                Home
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/products" 
-                className="block text-navy hover:text-gold transition-colors duration-200 font-medium"
-                onClick={toggleMenu}
-              >
-                Products
-              </Link>
-            </li>
-            <li>
-              <Link 
-                to="/contact" 
-                className="block text-navy hover:text-gold transition-colors duration-200 font-medium"
-                onClick={toggleMenu}
-              >
-                Contact
+                Request a quote <ArrowRight className="h-4 w-4" />
               </Link>
             </li>
           </ul>
         </div>
       )}
-    </nav>
+    </header>
   );
 };
 

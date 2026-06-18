@@ -1,60 +1,59 @@
-
 import { Link } from "react-router-dom";
+import { Mail, Phone, MapPin } from "lucide-react";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-navy text-white pt-12 pb-8">
-      <div className="container mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <footer className="bg-navy-dark text-white">
+      <div className="container mx-auto px-4 pt-14 pb-8">
+        <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           <div>
-            <div className="mb-4">
-              <img 
-                src="/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png" 
-                alt="Kairos IT Services Logo" 
-                className="h-12 bg-white p-1 rounded"
-              />
-            </div>
-            <p className="text-gray-300 mb-4">
-              Providing quality IT solutions since 2023.
-              We pride ourselves on integrity, honesty, customer satisfaction and product excellence.
+            <img
+              src="/lovable-uploads/a6539c3e-b237-4c78-8489-7134280b70c6.png"
+              alt="Kairos IT Services"
+              className="mb-4 h-12 w-auto rounded bg-white p-1"
+            />
+            <p className="max-w-xs text-sm leading-relaxed text-white/60">
+              Hands-on POS implementation, IT infrastructure and managed support for
+              retail and hospitality operators across South Africa.
             </p>
+            <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-xs font-medium text-white/50">
+              <span>Authorised PAR PixelPoint reseller</span>
+              <span>Procurant partner</span>
+            </div>
           </div>
-          
+
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-gold">Quick Links</h4>
-            <ul className="space-y-2">
-              <li>
-                <Link to="/" className="text-gray-300 hover:text-gold transition-colors">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link to="/products" className="text-gray-300 hover:text-gold transition-colors">
-                  Products
-                </Link>
-              </li>
-              <li>
-                <Link to="/contact" className="text-gray-300 hover:text-gold transition-colors">
-                  Contact
-                </Link>
-              </li>
+            <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
+              Explore
+            </h4>
+            <ul className="mt-4 space-y-2.5 text-sm">
+              <li><Link to="/" className="text-white/65 transition-colors hover:text-orange">Home</Link></li>
+              <li><Link to="/products" className="text-white/65 transition-colors hover:text-orange">Solutions</Link></li>
+              <li><Link to="/contact" className="text-white/65 transition-colors hover:text-orange">Contact</Link></li>
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="text-lg font-semibold mb-4 text-gold">Contact Us</h4>
-            <address className="not-italic text-gray-300 space-y-2">
-              <p>325 Forest Walk Crescent</p>
-              <p>Faerie Glen, Pretoria, 0081</p>
-              <p>Email: marketing@kairosit.co.za</p>
-              <p>Phone: (+27) 82 708 5927</p>
+            <h4 className="font-display text-sm font-semibold uppercase tracking-wider text-white">
+              Get in touch
+            </h4>
+            <address className="mt-4 space-y-3 not-italic text-sm text-white/65">
+              <a href="mailto:marketing@kairosit.co.za" className="flex items-center gap-2.5 transition-colors hover:text-orange">
+                <Mail className="h-4 w-4 shrink-0 text-orange" /> marketing@kairosit.co.za
+              </a>
+              <a href="tel:+27827085927" className="flex items-center gap-2.5 transition-colors hover:text-orange">
+                <Phone className="h-4 w-4 shrink-0 text-orange" /> +27 82 708 5927
+              </a>
+              <p className="flex items-start gap-2.5">
+                <MapPin className="h-4 w-4 shrink-0 text-orange" /> Faerie Glen, Pretoria, 0081
+              </p>
             </address>
           </div>
         </div>
-        
-        <div className="border-t border-gold/30 mt-8 pt-8 text-center text-gray-300">
+
+        <div className="mt-12 border-t border-white/10 pt-6 text-center text-sm text-white/50">
           <p>&copy; {currentYear} Kairos IT Services. All rights reserved.</p>
         </div>
       </div>

@@ -12,6 +12,7 @@ import {
   Droplet,
   Zap,
   Package,
+  ArrowRight,
 } from "lucide-react";
 
 interface ProductCardProps {
@@ -123,9 +124,9 @@ const ProductCard = ({ product }: ProductCardProps) => {
         <div className="flex justify-end items-center">
           <Link
             to={`/products/${product.id}`}
-            className="px-4 py-2 bg-navy text-white rounded hover:bg-navy-light transition-colors"
+            className="inline-flex items-center gap-1.5 font-semibold text-navy transition-colors hover:text-orange"
           >
-            View Details
+            View details <ArrowRight className="h-4 w-4" />
           </Link>
         </div>
       </div>
